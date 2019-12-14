@@ -46,7 +46,7 @@ Restart=always
 WantedBy=multi-user.target
 
 
-==============
+============== Створюєм юзера + деректорію для редіса
 
 sudo adduser --system --group --no-create-home redis   
 sudo mkdir /var/lib/redis   
