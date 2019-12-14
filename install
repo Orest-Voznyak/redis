@@ -62,6 +62,7 @@ sudo systemctl restart redis
 sudo systemctl stop redis
 
 redis-cli - запускаємо редіс
+     після того як запустили redis прописуєм команду redis memory
 
 Вставить конфиг в common/config/main-local.php
  'cache' => [
