@@ -61,6 +61,7 @@ systemctl status redis
 sudo systemctl restart redis
 sudo systemctl stop redis
 
+redis-cli - запускаємо редіс
 
 Вставить конфиг в common/config/main-local.php
  'cache' => [
