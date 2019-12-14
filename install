@@ -65,22 +65,10 @@ redis-cli - запускаємо редіс
      після того як запустили redis прописуєм команду 
      >info memory
 
-Вставить конфиг в common/config/main-local.php
- 'cache' => [
-            'class' => 'yii\redis\Cache',
-        ],
-        'redis' => [
-            'class' => 'yii\redis\Connection',
-            'hostname' => 'localhost',
-            'port' => 6379,
-            'database' => 0,
-        ],
+==========Команди======
+set test 100 - ми записали 100 під ключом test
+get test - нам виведить 100
+del test - видалення
+FLUSHALL - повне очищення кеша
 
 
-
-
-Установка библеотеки Redis для yii2:
-composer require --prefer-dist yiisoft/yii2-redis
-
-Если композер попросит токен, перейти по этой ссылке и на гитхабе сгенерировать его и вставить в консоль
-https://github.com/settings/tokens/new?scopes=repo&description=Composer
